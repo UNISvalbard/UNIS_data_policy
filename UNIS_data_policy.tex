@@ -12,8 +12,13 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{booktabs} % For better table formatting
+\usepackage{changes}
+\usepackage{xcolor}
 \pagestyle{fancy}
 \hypersetup{colorlinks=true,linkcolor=blue, linktocpage}
+% Custom markup for additions (blue) and deletions (red strikethrough)
+\setaddedmarkup{\textcolor{purple}{#1}}
+\setdeletedmarkup{\textcolor{red}{\sout{#1}}}
 
 \newcommand{\emailme}{\href{mailto:lukem@unis.no}{lukem@unis.no}}
 
@@ -81,7 +86,7 @@ Conduct of Research, and the OECD Principles and Guidelines for Access to Resear
 \section{Aims}
 \label{s:aims}
 
-UNIS aims to share free and ethically open scientific data with other UNIS staff and students, as well as with external users. 
+UNIS aims to share free and ethically open scientific data with other UNIS staff and students, as well as with external users\added{, subject to appropriate access measures where neccessary. UNIS data should be as open as possible whilst access allowing for restrictions to access where neccessary.} 
 
 \section{Principles}
 \label{s:principles}
@@ -135,6 +140,6 @@ The UNIS data management plan will describe the implementation of this data poli
 \section{Approval and Review}
 \label{s:approval}
 
-This version of the data policy was approved by the UNIS leadership group in February, 2026. It shall be reviewed annual by the UNIS leadership group and data management staff at UNIS.
+This version of the data policy was approved by the UNIS leadership group in \deleted{February, 2026}\added{MONTH, YEAR}. It shall be reviewed annual by the UNIS leadership group and data management staff at UNIS.
 
 \end{document} 
